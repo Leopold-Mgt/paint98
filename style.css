@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+body {
+    background-color: #017F7E;
+}
+
+a {
+    color: #000000;
+}
+
+button, input {
+    width: 32px;
+    height: 28px;
+    border: solid 2px;
+    border-top-color: #E6E7F3;
+    border-left-color: #E6E7F3;
+    border-right-color: #7F7F7F;
+    border-bottom-color: #7F7F7F;
+    padding: 3px;
+    background-color: #BFBFBF;
+    outline: none;
+    margin: 2px 0;
+    cursor: pointer;
+}
+
+input {
+    width: 22px;
+    height: 26px;
+}
+
+button:active, input:active {
+    border: solid 2px;
+    border-top-color: #525252;
+    border-left-color: #525252;
+    border-right-color: #FFF;
+    border-bottom-color: #FFF;
+    padding: 3px;
+    background-color: #DEDDDF;
+    outline: none;
+}
+
+.active-btn {
+    border: solid 2px;
+    border-top-color: #525252;
+    border-left-color: #525252;
+    border-right-color: #FFF;
+    border-bottom-color: #FFF;
+    padding: 3px;
+    background-color: #DEDDDF;
+    outline: none;
+}
+
+/*BlueScreen*/
+
+.bluescreen {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000FF;
+    color: #fff;
+    font-family: 'VT323', monospace;
+    z-index: 100;
+}
+
+.bluescreen h1 {
+    margin: 25vh auto 2rem;
+    width: 6rem;
+    text-align: center;
+    color: #0000FF;
+    font-size: 24px;
+    font-weight: normal;
+    background-color: #cccccc;
+}
+
+.bluescreen p {
+    width: 40rem;
+    margin: auto;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+/*Window*/
+
+.window {
+    width: 30vw;
+    min-width: 55rem;
+    border: solid 3px;
+    border-top-color: #E6E7F3;
+    border-left-color: #E6E7F3;
+    border-right-color: #7F7F7F;
+    border-bottom-color: #7F7F7F;
+    margin: 3rem auto;
+    padding: 2px;
+    background-color: #BFBFBF;
+}
+
+.top-window {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #020181;
+    padding: 2px;
+}
+
+.top-window button {
+    margin: 1px 0 0;
+    width: 24px;
+    height: 22px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.top-left-window {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-window img {
+    width: 24px;
+}
+
+.top-window h1 {
+    margin: 2px 4px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    color: #fff;
+}
+
+.optionbar {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 14px;
+    color: #000;
+    list-style: none;
+    padding: 2px;
+}
+
+.optionbar li {
+    padding: 4px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.optionbar li::first-letter {
+    text-decoration: underline;
+}
+
+.optionbar li:hover {
+    background-color: #d6d6d6;
+}
+
+.core {
+    display: flex;
+    flex-direction: row;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    width: 28px;
+    padding: 4px 10px 0 4px;
+}
+
+.area {
+    height: 40rem;
+    width: 52rem;
+    background-color: #7F7F7F;
+    border: solid 3px;
+    border-top-color: #3D3D3D;
+    border-left-color: #3D3D3D;
+    border-right-color: #E3E3E3;
+    border-bottom-color: #E3E3E3;
+}
+
+.draw-area {
+    height: 30rem;
+    width: 90%;
+    margin: 4px;
+    background-color: #fff;
+    border: solid 1px #6a6a6a;
+}
+
+.render {
+    display: block;
+    width: 100%;
+    height: 30rem;
+    cursor: crosshair;
+}
+
+/*TASK BAR*/
+
+.taskbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    bottom: 0;
+    width: 100%;
+    background-color: #BFBFBF;
+    border-top: solid 2px #E3E3E3;
+}
+
+.left-taskbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-taskbar .start-btn {
+    display: flex;
+    flex-direction: row;
+    width: 5rem;
+    height: 2rem;
+    margin: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.left-taskbar .start-btn img {
+    margin: 0 6px 0 2px;
+    width: 22px;
+}
+
+.left-taskbar .paint-btn {
+    display: flex;
+    flex-direction: row;
+    width: 13rem;
+    height: 2rem;
+    margin: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.left-taskbar .paint-btn img {
+    margin: 0 6px 0 2px;
+    width: 22px;
+}
+
+.left-taskbar .paint-btn p {
+    margin: 2px 0 0;
+}
+
+.right-taskbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #BFBFBF;
+    width: 5rem;
+    margin: 2px;
+    border: solid 2px;
+    border-top-color: #8F8F8F;
+    border-left-color: #8F8F8F;
+    border-right-color: #E3E3E3;
+    border-bottom-color: #E3E3E3;
+}
+
+.right-taskbar img {
+    margin: 0 6px 0 2px;
+    width: 24px;
+}
+
+.right-taskbar p {
+    margin: 4px 0 0;
+}
+

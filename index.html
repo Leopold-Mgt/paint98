@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Paint 98</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4b4089c96a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="bluescreen">
+    <h1>Windows</h1>
+    <p>An error has occured. To continue: <br><br>
+        Press Enter to return to Windows, or <br><br>
+        Press CTRL+ALT+DEL to restart your computer. If you do this, <br>
+        you will lose any unsaved information in all open applications. <br><br>
+        Error: OE : 016F : BFF983D4 <br><br><br>
+        Press esc to continue _</p>
+</div>
+<div class="window">
+    <div class="top-window">
+        <div class="top-left-window">
+            <img src="icon.png" alt="">
+            <h1>untitled - Paint</h1>
+        </div>
+        <div class="top-right-window">
+            <button class="reduce-btn">ـ</button>
+            <button class="resize-btn">□</button>
+            <button class="close-btn">X</button>
+        </div>
+    </div>
+    <ul class="optionbar">
+        <li>File</li>
+        <li>Edit</li>
+        <li>View</li>
+        <li>Image</li>
+        <li>Option</li>
+        <li>Help</li>
+    </ul>
+    <div class="core">
+        <div class="toolbar">
+            <button class="save-btn"><a id="download" download="untitled.png" href="" onclick="save();"><i
+                    class="fas fa-save"></i></a></button>
+            <button class="pen-btn"><i class="fas fa-paint-brush"></i></button>
+            <button class="eraser-btn"><i class="fas fa-eraser"></i></button>
+            <button class="line-btn"><i class="fas fa-pen"></i></button>
+            <button class="square-btn"><i class="far fa-square"></i></button>
+            <button class="squarefull-btn"><i class="fas fa-square"></i></button>
+            <button class="circle-btn"><i class="far fa-circle"></i></button>
+            <button class="circlefull-btn"><i class="fas fa-circle"></i></button>
+            <input type="color" class="color-btn">
+            <input type="range" class="brush-size" min="1" max="50" value="10">
+        </div>
+        <div class="area">
+            <div class="draw-area">
+                <canvas class="render"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="taskbar">
+    <div class="left-taskbar">
+        <button class="start-btn"><img src="start_logo.png" alt="">
+            <p>Start</p></button>
+        <button class="paint-btn active-btn"><img src="icon.png" alt="">
+            <p>untitled - Paint</p></button>
+    </div>
+    <div class="right-taskbar">
+        <img src="computer_icon.gif" alt="">
+        <p class="hour"></p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
